@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validarDados(){
+            if( document.getElementById("nome").value == ""){
+             alert ("O campo Nome não foi preenchido"); 
+            }
+            if( document.getElementById("endereco").value == ""){
+                alert ("O campo Endereço não foi preenchido"); 
+            }
+            if( document.getElementById("bairro").value == ""){
+                alert ("O campo Bairro não foi preenchido"); 
+            }
+            if( document.getElementById("cep").value == ""){
+                alert ("O campo CEP não foi preenchido"); 
+            }
+            if( document.getElementById("cidade").value == ""){
+                alert ("O campo Cidade não foi preenchido"); 
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        Nome: <input type="text" name="nome" id="nome"><br><br>
+        Endereço: <input type="text" name="endereco" id="endereco"><br><br>
+        Bairro: <input type="text" name="bairro" id="bairro"><br><br>
+        CEP: <input type="text" name="cep" id="cep"><br><br>
+        Cidade: <input type="text" name="cidade" id="cidade"><br><br>
+        Estado:  <select class="form-select" aria-label="edtEstado">
+                    <option selected>Selecione o seu estado</option>
+                    <option value="1">Sp</option>
+                    <option value="2">Rj</option>
+                    <option value="3">Mg</option>
+                    <option value="4">Df</option>
+                    <option value="5">Ac</option>
+                    <option value="6">Mt</option>
+                </select><br><br>
+        <button value="Cadastrar" name="Cadastrar" id="Cadastrar" onclick="validarDados()">Cadastrar</button><br><br>    
+    </form>
+    
+</body>
+</html>
